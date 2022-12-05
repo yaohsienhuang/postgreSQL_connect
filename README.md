@@ -1,6 +1,6 @@
 # postgreSQL_connect
-* 將連線資訊儲存在 *name*.env 中
-* 藉由 dbConInfo 中的 super().__init__(env_name) 觸發 read_dotenv 將連線資訊讀取至environ
+* 將連線資訊儲存在 db_conn_info/*name*.env 中
+* 藉由 dbConInfo 中的 super().__ init __(env_name) 觸發 read_dotenv 將連線資訊讀取至environ
 * 使用 env.host() 等方法，從 os.environ 讀取需要連線資訊
 * 使用 python 裝飾器，快速引入 *name*.env 中的連線資訊
 * 使用 python class 中的 __ enter __ 與 __ exit __ 方法，連線取得資訊後就關閉連線
